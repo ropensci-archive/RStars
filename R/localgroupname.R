@@ -3,10 +3,11 @@
 #' This will return infomation about the requested local group galaxy 
 #' @title Search for local group galaxy infomation
 #' @param Star name will return infomation about the local group galaxy 
-#' @return Infomation about the requested local group galaxy 
 #' @keywords Name
 #' @export
 #' @examples
+#' library(RCurl)
+#' library(RJSONIO)
 #' ###Return Infomation about the local group galaxy 
 #' localgroupname("IC 10")
 #' ###Return Infomation about the local group galaxy 

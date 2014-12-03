@@ -3,10 +3,11 @@
 #' This will return infomation about the requested exoplant, 
 #' @title Search for exoplant infomation
 #' @param Star name will return infomation about the exoplant
-#' @return Infomation about the requested exoplant
 #' @keywords Name
 #' @export
 #' @examples
+#' library(RCurl)
+#' library(RJSONIO)
 #' ###Return Infomation about the exoplanet 11 Com
 #' exoplantname("11 Com")
 #' ###Return Infomation about the exoplanet Kepler-9

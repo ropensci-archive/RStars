@@ -3,10 +3,11 @@
 #' This will return infomation about the requested star, 
 #' @title Search for star infomation
 #' @param Star name will return infomation about the star.
-#' @return Infomation about the requested star
 #' @keywords Name
 #' @export
 #' @examples
+#' library(RCurl)
+#' library(RJSONIO)
 #' ###Return Infomation about the Sun
 #' starname("Sun")
 #' ###Return Infomation about the star HIP1 HD224700 Gli
