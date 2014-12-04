@@ -2,10 +2,11 @@
 #'
 #' This will return infomation about the requested exoplant, 
 #' @title Search for exoplant infomation
-#' @param Star name will return infomation about the exoplant
+#' @param exoplant a string of an existing exoplant
+#' @return JSON object with infomation about the queried exoplant
 #' @keywords Name
-#' @export
 #' @examples
+#' \dontrun{
 #' library(RCurl)
 #' library(RJSONIO)
 #' ###Return Infomation about the exoplanet 11 Com
@@ -13,7 +14,9 @@
 #' ###Return Infomation about the exoplanet Kepler-9
 #' exoplantname("Kepler-9")
 #' ###Return Infomation about all exoplants in the system
-#' exoplanetname("")
+#' exoplantname("")
+#' }
+#' @export
 
 exoplantname <- function (exoplant) {
   internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)

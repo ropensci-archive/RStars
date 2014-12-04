@@ -2,10 +2,11 @@
 #'
 #' This will return infomation about the requested local group galaxy 
 #' @title Search for local group galaxy infomation
-#' @param Star name will return infomation about the local group galaxy 
+#' @param localgroup a string of an existing local group galaxy
+#' @return JSON object with infomation about the queried local group galaxy
 #' @keywords Name
-#' @export
 #' @examples
+#' \dontrun{
 #' library(RCurl)
 #' library(RJSONIO)
 #' ###Return Infomation about the local group galaxy 
@@ -14,7 +15,8 @@
 #' localgroupname("WLM")
 #' ###Return Infomation about all local group galaxies in the system
 #' localgroupname("")
-
+#' }
+#' @export
 localgroupname <- function (localgroup) {
   internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)
   if( internetcheck != TRUE)

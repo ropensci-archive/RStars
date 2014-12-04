@@ -6,6 +6,8 @@
 
 # R data files from past sessions
 .Rdata
+.Rproj.user
+.Rproj
 
 # =========================
 # Operating System Files
@@ -19,7 +21,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

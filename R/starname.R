@@ -2,10 +2,11 @@
 #'
 #' This will return infomation about the requested star, 
 #' @title Search for star infomation
-#' @param Star name will return infomation about the star.
+#' @param star a string of an existing star
+#' @return JSON object with infomation about the queried star
 #' @keywords Name
-#' @export
 #' @examples
+#' \dontrun{
 #' library(RCurl)
 #' library(RJSONIO)
 #' ###Return Infomation about the Sun
@@ -14,7 +15,8 @@
 #' starname("HIP1 HD224700 Gli")
 #' ###Return Infomation about all of the stars in the system
 #' starname("")
-
+#' }
+#' @export
 starname <- function (star) {
   internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)
   if( internetcheck != TRUE)
