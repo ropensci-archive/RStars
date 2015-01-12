@@ -2,6 +2,8 @@
 #'
 #' This will return infomation about the requested exoplanet, 
 #' @title Search for exoplanet infomation
+#' 
+#' @import RCurl RJSONIO
 #' @param exoplanet a string of an existing exoplanet
 #' @return JSON object with infomation about the queried exoplanet
 #' @keywords Name
