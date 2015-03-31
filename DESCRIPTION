@@ -7,8 +7,8 @@ Author: William Kyle Hamilton <kyle.hamilton@gmail.com>
 Maintainer: William Kyle Hamilton <kyle.hamilton@gmail.com>
 Description: Access to the Digital Universe Data set API pulls data on
     exoplants, stars, and galaxies.
+Depends: R (>= 3.0.3)
 Imports:
-    R (>= 3.0.3),
     RJSONIO,
     RCurl
 License: GPL-3
