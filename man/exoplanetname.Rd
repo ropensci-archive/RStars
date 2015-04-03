@@ -21,7 +21,7 @@ This will return infomation about the requested exoplanet,
 \examples{
 \dontrun{
 library(RCurl)
-library(RJSONIO)
+library(jsonlite)
 ###Return Infomation about the exoplanet 11 Com
 exoplanetname("11 Com")
 ###Return Infomation about the exoplanet Kepler-9

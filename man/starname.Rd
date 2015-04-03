@@ -21,7 +21,7 @@ This will return infomation about the requested star,
 \examples{
 \dontrun{
 library(RCurl)
-library(RJSONIO)
+library(jsonlite)
 ###Return Infomation about the Sun
 starname("Sun")
 ###Return Infomation about the star HIP1 HD224700 Gli
