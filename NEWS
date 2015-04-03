@@ -1,0 +1,10 @@
+RStars 1.0.2
+------------
+
+IMPROVEMENTS AND BUG FIXES
+
+* Added NEWS file
+
+* Spelling mistake corrected
+
+* Changed from RJSONIO to jsonlite as per the rOpenSci Style Guide

@@ -8,7 +8,7 @@
 #' @examples
 #' \dontrun{
 #' library(RCurl)
-#' library(RJSONIO)
+#' library(jsonlite)
 #' ###Return Infomation about the Sun
 #' starname("Sun")
 #' ###Return Infomation about the star HIP1 HD224700 Gli
@@ -23,6 +23,6 @@ starname <- function (star) {
     stop('Hacktheuniverse or your internet connection is down')
   urldata <- paste('http://star-api.herokuapp.com/api/v1/stars/', URLencode(star), sep = "")
   data <- getURL(urldata)
-  dataFrame <- RJSONIO::fromJSON(data)
+  dataFrame <- jsonlite::fromJSON(data)
   return (dataFrame)
 }

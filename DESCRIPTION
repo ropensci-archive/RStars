@@ -1,15 +1,15 @@
 Package: RStars
 Type: Package
 Title: Access to the Digital Universe Data set API
-Version: 1.0.1
-Date: 2015-03-31
+Version: 1.0.2
+Date: 2015-04-02
 Author: William Kyle Hamilton <kyle.hamilton@gmail.com>
 Maintainer: William Kyle Hamilton <kyle.hamilton@gmail.com>
 Description: Access to the Digital Universe Data set API pulls data on
     exoplants, stars, and galaxies.
 Depends: R (>= 3.0.3)
 Imports:
-    RJSONIO,
+    jsonlite,
     RCurl
 License: GPL-3
 URL: https://github.com/ropensci/RStars

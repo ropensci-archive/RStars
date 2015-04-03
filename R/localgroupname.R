@@ -8,7 +8,7 @@
 #' @examples
 #' \dontrun{
 #' library(RCurl)
-#' library(RJSONIO)
+#' library(jsonlite)
 #' ###Return Infomation about the local group galaxy 
 #' localgroupname("IC 10")
 #' ###Return Infomation about the local group galaxy 
@@ -23,6 +23,6 @@ localgroupname <- function (localgroup) {
     stop('Hacktheuniverse or your internet connection is down')
   urldata <- paste('http://star-api.herokuapp.com/api/v1/local_groups/', URLencode(localgroup), sep = "")
   data <- getURL(urldata)
-  dataFrame <- RJSONIO::fromJSON(data)
+  dataFrame <- jsonlite::fromJSON(data)
   return (dataFrame)
 }

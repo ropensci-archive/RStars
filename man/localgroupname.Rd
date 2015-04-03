@@ -21,7 +21,7 @@ This will return infomation about the requested local group galaxy
 \examples{
 \dontrun{
 library(RCurl)
-library(RJSONIO)
+library(jsonlite)
 ###Return Infomation about the local group galaxy
 localgroupname("IC 10")
 ###Return Infomation about the local group galaxy
