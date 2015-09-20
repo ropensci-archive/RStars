@@ -12,6 +12,6 @@ Futher infomation about this API and this dataset can be found here http://star-
 
 * Please [report any issues or bugs](https://github.com/ropensci/RStars/issues).
 * License: `GPL-3`
-* Get citation information for `RCryptsy` in R doing `citation(package = 'RStars')`
+* Get citation information for `RStars` in R doing `citation(package = 'RStars')`
 
 [![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
