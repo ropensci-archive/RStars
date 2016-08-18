@@ -20,12 +20,12 @@
 #' }
 #' @export
 
-exoplanetname <- function (exoplanet) {
-  internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)
-  if( internetcheck != TRUE)
+exoplanetname <- function(exoplanet) {
+  internetcheck <- RCurl::url.exists("http://star-api.herokuapp.com", timeout = 10)
+  if (internetcheck != TRUE)
     stop('Hacktheuniverse or your internet connection is down')
-  urldata <- paste('http://star-api.herokuapp.com/api/v1/exo_planets/', URLencode(exoplanet), sep = "")
-  data <- getURL(urldata)
+  urldata <- paste('http://star-api.herokuapp.com/api/v1/exo_planets/', utils::URLencode(exoplanet), sep = "")
+  data <- RCurl::getURL(urldata)
   dataFrame <- jsonlite::fromJSON(data)
-  return (dataFrame)
+  return(dataFrame)
 }

@@ -1,15 +1,24 @@
 Package: RStars
 Type: Package
-Title: Access to the American Museum of Natural History's Digital Universe Dataset API
-Version: 1.0.3
-Date: 2015-04-02
-Author: William Kyle Hamilton <kyle.hamilton@gmail.com>
+Title: Access to the American Museum of Natural History's Digital Universe
+    Dataset API
+Version: 1.0.4
+Date: 2016-08-12
+Authors@R: c(person("William", "Hamilton", "Kyle", email = "kyle.hamilton@gmail.com", role = c("aut", "cre")),
+             person("Jonathan", "Carroll", email = "rpkg@jcarroll.com.au", role = c("ctb")))
 Maintainer: William Kyle Hamilton <kyle.hamilton@gmail.com>
-Description: Access to the American Museum of Natural History's Digital Universe Dataset API. Including information on positions, luminosity, color, and other data on over 100,000 stars as well as constellations, exo-planets, clusters and others. Further information about this API and this dataset can be found here http://star-api.herokuapp.com/ 
-Depends: R (>= 3.0.3)
+Description: Access to the American Museum of Natural History's Digital Universe
+    Dataset API, including information on positions, luminosity, color, and other
+    data on over 100,000 stars as well as constellations, exo-planets, clusters and
+    others. Further information about this API and this dataset can be found here
+    \url(http://star-api.herokuapp.com/).
+Depends:
+    R (>= 3.0.3)
 Imports:
     jsonlite,
-    RCurl
+    RCurl,
+    httr
 License: GPL-3
 URL: https://github.com/ropensci/RStars
 BugReports: https://github.com/ropensci/RStars/issues
+RoxygenNote: 5.0.1

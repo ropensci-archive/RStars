@@ -17,12 +17,12 @@
 #' localgroupname("")
 #' }
 #' @export
-localgroupname <- function (localgroup) {
-  internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)
-  if( internetcheck != TRUE)
+localgroupname <- function(localgroup) {
+  internetcheck <- RCurl::url.exists("http://star-api.herokuapp.com", timeout = 10)
+  if (internetcheck != TRUE)
     stop('Hacktheuniverse or your internet connection is down')
-  urldata <- paste('http://star-api.herokuapp.com/api/v1/local_groups/', URLencode(localgroup), sep = "")
-  data <- getURL(urldata)
+  urldata <- paste('http://star-api.herokuapp.com/api/v1/local_groups/', utils::URLencode(localgroup), sep = "")
+  data <- RCurl::getURL(urldata)
   dataFrame <- jsonlite::fromJSON(data)
-  return (dataFrame)
+  return(dataFrame)
 }
