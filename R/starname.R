@@ -17,12 +17,13 @@
 #' starname("")
 #' }
 #' @export
-starname <- function (star) {
-  internetcheck <- url.exists("http://star-api.herokuapp.com", timeout = 10)
-  if( internetcheck != TRUE)
+starname <- function(star) {
+  internetcheck <- RCurl::url.exists("http://star-api.herokuapp.com", timeout = 10)
+  if (internetcheck != TRUE)
     stop('Hacktheuniverse or your internet connection is down')
-  urldata <- paste('http://star-api.herokuapp.com/api/v1/stars/', URLencode(star), sep = "")
-  data <- getURL(urldata)
+  urldata <- paste('http://star-api.herokuapp.com/api/v1/stars/', utils::URLencode(star), sep = "")
+  data <- RCurl::getURL(urldata)
   dataFrame <- jsonlite::fromJSON(data)
-  return (dataFrame)
+  return(dataFrame)
 }
+
