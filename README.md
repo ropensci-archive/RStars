@@ -15,3 +15,4 @@ Futher infomation about this API and this dataset can be found here http://star-
 * Get citation information for `RStars` in R doing `citation(package = 'RStars')`
 
 [![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![codecov.io](https://codecov.io/github/ropensci/RStars/coverage.svg?branch=master)](https://codecov.io/github/ropensci/RStars?branch=master)
